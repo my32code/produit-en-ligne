@@ -426,6 +426,14 @@ body{background:#fff}
 .spx-imgwrap img:hover{transform:scale(1.025)}
 .spx-imgwrap.reveal{transform:translateY(40px) scale(.97)}
 .spx-imgwrap.reveal.in{transform:none}
+/* bonus visuel : miniature floutee et texte complementaire */
+.bonus-banner{max-width:1180px;margin:42px auto;padding:0 18px;display:grid;grid-template-columns:1.35fr 1fr;gap:0;align-items:stretch}
+.bonus-banner img{width:100%;height:100%;min-height:250px;object-fit:cover;border-radius:20px 0 0 20px;box-shadow:0 36px 80px -30px rgba(44,7,18,.55);border:1px solid var(--line)}
+.bonus-banner-copy{display:flex;flex-direction:column;justify-content:center;background:linear-gradient(145deg,var(--cream-2),var(--paper));border:1px solid var(--line);border-left:0;border-radius:0 20px 20px 0;padding:34px 30px;color:var(--wine)}
+.bonus-banner-copy .eyebrow{color:var(--gold);font-size:.72rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
+.bonus-banner-copy h3{font-family:"Poppins",system-ui,sans-serif;font-size:clamp(1.35rem,2.5vw,2rem);line-height:1.15;margin:10px 0 12px}
+.bonus-banner-copy p{color:var(--ink);font-size:1rem;line-height:1.6;margin:0}
+@media(max-width:700px){.bonus-banner{grid-template-columns:1fr;padding:0 12px}.bonus-banner img{min-height:0;height:auto;border-radius:16px 16px 0 0}.bonus-banner-copy{border-left:1px solid var(--line);border-top:0;border-radius:0 0 16px 16px;padding:24px 22px}}
 /* video */
 .spx-videowrap{max-width:920px;margin:36px auto;padding:0 18px}
 .spx-videowrap video{width:100%;border-radius:18px;box-shadow:var(--shadow);background:#000;aspect-ratio:16/9}
@@ -553,7 +561,7 @@ body{background:#fff}
     </div></div>
 
     <div class="spx-sec">
-      <div class="spx-imgwrap reveal in"><img loading="lazy" src="./bonus-video-preview.jpg" alt="Aperçu du bonus vidéo"></div>
+      <div class="bonus-banner reveal in"><img loading="lazy" src="./bonus-video-thumbnail.jpg" alt="Aperçu flouté du bonus vidéo"><div class="bonus-banner-copy"><span class="eyebrow">Bonus vidéo inclus</span><h3>Une démonstration guidée pour mieux visualiser les gestes</h3><p>Un support complémentaire pour comprendre le rythme, les transitions et la précision des mouvements, à consulter avec le guide.</p></div></div>
       <div class="spx-wrap reveal in"><h2 class="spx-h">🔥 La majorité des femmes ne jouissent pas de la pénétration. Elles jouissent du clitoris.</h2></div>
       <div class="spx-wrap reveal in"><p class="spx-p" style="text-align:center"><strong>Presque tous les orgasmes d'une femme viennent du clitoris.</strong> C'est le seul organe du corps humain qui ne sert qu'au plaisir : 8 000 terminaisons nerveuses, autant que ton gland, sur une zone bien plus petite.</p></div>
     </div>
